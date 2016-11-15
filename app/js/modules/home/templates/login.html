@@ -1,0 +1,8 @@
+<md-content>
+    <div layout="row" layout-align="center center">
+        <md-button class="md-warn" ng-click="vm.viewInfo=!vm.viewInfo;">{{vm.viewInfo?'Hide':'Show'}}</md-button>
+    </div>
+    <div layout="row" ng-if="vm.viewInfo" layout-align="center center">
+        <div>{{vm.osArch}}</div>
+    </div>
+<md-content>
